@@ -1,9 +1,9 @@
 <head>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-		@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 		
 		body {
 				max-width:1140px;
@@ -145,6 +145,11 @@
 		td > h3 {
 			margin-top: 0;
 		}
+		
+		#status {
+    	font-size: large;
+			margin-top: .5em;			
+		}
 	</style>
 </head>
 
@@ -174,8 +179,9 @@
 	</span>
 </div>
 	
-<h2>Interests</h2>
-	<p>Currently living in California on an F1 visa; Seeking a PhD position in <u>computer architecture, machine learning</u> </p>
+<p id=status>Currently living in Mountain View, CA on an F1 visa
+		<br>Seeking a PhD position in <u>computer architecture, machine learning</u> 
+</p>
 	
 <h2>Education</h2>
 <h3>
@@ -275,12 +281,20 @@
 		<td></td>
 	</tr>
 	<tr>
+		<td>AI / ML Libraries</td>
+		<td>Tenserflow, Pytorch, Numpy, NLTK, scikit-learn</td>
+	</tr>
+	<tr>
 		<td>Full System Simulators</td>
 		<td>GEM5, Zsim, SimpleScalar, MARSS, Sim-SODA</td>
 	</tr>
 	<tr>
-		<td>Network, Mem, Power Simulators</td>
-		<td>Booksim, NVSim, NVMain, DiskSim, McPAT</td>
+		<td>Memory Simulators</td>
+		<td>NVSim, NVMain, DiskSim</td>
+	</tr>
+	<tr>
+		<td>Network and Power Simulators</td>
+		<td>Booksim, McPAT</td>
 	</tr>
 	<tr>
 		<td>HDL Simulators</td>
@@ -292,7 +306,7 @@
 	</tr>
 	<tr>
 		<td>Miscellaneous</td>
-		<td>Altium Designer, Hspice, LEdit, SoC Encounter</td>
+		<td>Altium Designer, HSpice, LEdit, SoC Encounter</td>
 	</tr>
 </table>
   
@@ -373,20 +387,23 @@
     </tr>
 </table>	
 <h2>Select M.S. Projects</h2>
-	<h3><dd>Advanced Computer Architecture</dd></h3>
-		<ul>
-			<li>L2-cache size effect on the performance of multi-core processors</li>
-		</ul>
-
 	<h3><dd>Parallel Processing</dd></h3>
 		<ul>
 			<li>Measurement of GPU power consumption with <b>GPGPU-Sim</b></li>
 		</ul>
 	<h3><dd>Parallel Processing</dd></h3>
 		<ul>
-			<li>Performance difference between <b>Pthread</b> and <b>OpenMP</b> running the Stereo Vision algorithm (performance was measured with <b>Parallel Studio</b>).</li>
+			<li>Performance difference between <b>pthreads</b> and <b>OpenMP</b> running the Stereo Vision algorithm (performance, measured with <b>Parallel Studio</b>)</li>
 		</ul>
+	<h3><dd>Advanced Computer Architecture</dd></h3>
+		<ul>
+			<li>L2-cache size effect on the performance and power of multi-core processors using <b>Multi2Sim</b></li>
+		</ul>
+
 	<h3><dd>Fault Tolerance</dd></h3>
+		<ul>
+			<li>Estimation of power and AVF (architectural vulnerability factor) for the Alpha processor running Spec2000 using <b>SimSoda</b> and <b>WattCH</b></li>
+		</ul>
 	<h3><dd>Testability</dd></h3>
 		<ul>
 			<li>Implementation of a STUMPS-based test architecture for the MIPS processor</li>
@@ -394,13 +411,10 @@
 		</ul>
 	<h3><dd>VLSI</dd></h3>
 	<h3><dd>Low power</dd></h3>
-	<h3><dd></dd></h3>
-	
-	
-	
+		<ul>
+			<li>Exploration of gate-level techniques for low-power circuit design using <b>HSpice</b> and <b>Design Compiler</b></li>
+		</ul>
 	
 	<br>
-	
-	
 	
 </body>
